@@ -11,10 +11,12 @@ public class Login extends JFrame {
         getContentPane().setBackground(Color.WHITE);
         JPanel p1= new JPanel();
 
+
         p1.setBackground(new Color(133,193,233));
         p1.setBounds(0,0,400,400);
         p1.setLayout(null);
         add(p1);
+
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/login.png"));
         Image i2 = i1.getImage().getScaledInstance(200,200,Image.SCALE_DEFAULT);
@@ -23,10 +25,12 @@ public class Login extends JFrame {
         image.setBounds(100,120,200,200);
         p1.add(image);
 
+
         JPanel p2 = new JPanel();
         p2.setLayout(null);
         p2.setBounds(400,30,450,300);
         add(p2);
+
 
 
         JLabel lblusername =new JLabel("Username");
@@ -34,20 +38,24 @@ public class Login extends JFrame {
         lblusername.setFont(new Font("SAN SERIF",Font.PLAIN,20));
         p2.add(lblusername);
 
+
         JTextField tfusername = new JTextField();
         tfusername.setBounds(60,60,300,30);
         tfusername.setBorder(BorderFactory.createEmptyBorder());
         p2.add(tfusername);
+
 
         JLabel lblPassword =new JLabel("Password");
         lblPassword.setBounds(60,110,100,25);
         lblPassword.setFont(new Font("SAN SERIF",Font.PLAIN,20));
         p2.add(lblPassword);
 
+
         JTextField tfpassword = new JTextField();
         tfpassword.setBounds(60,150,300,30);
         tfpassword.setBorder(BorderFactory.createEmptyBorder());
         p2.add(tfpassword);
+
 
         JButton login = new JButton("Login");
         login.setBounds(60,200,130,30);
@@ -56,6 +64,7 @@ public class Login extends JFrame {
         login.setBorder(new LineBorder(new Color(133,193,233 )));
         p2.add(login);
 
+
         JButton signup = new JButton("Sign up");
         signup.setBounds(230,200,130,30);
         signup.setBackground(new Color(133,193,233));
@@ -63,12 +72,14 @@ public class Login extends JFrame {
         signup.setBorder(new LineBorder(new Color(133,193,233 )));
         p2.add(signup);
 
+
         JButton password = new JButton("Forget Password");
         password.setBounds(130,250,130,30);
         password.setBackground(new Color(133,193,233));
         password.setForeground(Color.WHITE);
         password.setBorder(new LineBorder(new Color(133,193,233 )));
         p2.add(password);
+
 
         JLabel text = new JLabel("Trouble is login...");
         text.setBounds(300,250,150,20);

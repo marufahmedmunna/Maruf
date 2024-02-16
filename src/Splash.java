@@ -8,6 +8,7 @@ public  class Splash extends JFrame implements Runnable {
         ImageIcon i3= new ImageIcon(i2);
         JLabel image = new JLabel(i3);
         add(image);
+
         setVisible(true);
         thread= new Thread(this);
         thread.start();
