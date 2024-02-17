@@ -25,7 +25,7 @@ public class Signup  extends  JFrame implements ActionListener {
 
 
         JLabel lblusername = new JLabel("username");
-        lblusername .setFont(new Font("Tahona",Font.BOLD,14));
+        lblusername .setFont(new Font("Tahoma",Font.BOLD,14));
         lblusername .setBounds(50,20,125,25);
         p1.add(lblusername);
 
@@ -37,7 +37,7 @@ public class Signup  extends  JFrame implements ActionListener {
 
 
         JLabel lblname = new JLabel("Name");
-        lblname .setFont(new Font("Tahona",Font.BOLD,14));
+        lblname .setFont(new Font("Tahoma",Font.BOLD,14));
         lblname .setBounds(50,60,125,25);
         p1.add(lblname);
 
@@ -49,7 +49,7 @@ public class Signup  extends  JFrame implements ActionListener {
 
 
         JLabel lblpassword = new JLabel("Password");
-        lblpassword .setFont(new Font("Tahona",Font.BOLD,14));
+        lblpassword .setFont(new Font("Tahoma",Font.BOLD,14));
         lblpassword  .setBounds(50,100,125,25);
         p1.add(lblpassword );
 
@@ -61,7 +61,7 @@ public class Signup  extends  JFrame implements ActionListener {
 
 
         JLabel lblsecurity = new JLabel("Security Question");
-        lblsecurity.setFont(new Font("Tahona",Font.BOLD,14));
+        lblsecurity.setFont(new Font("Tahoma",Font.BOLD,14));
         lblsecurity .setBounds(50,140,125,25);
         p1.add(lblsecurity);
 
@@ -77,7 +77,7 @@ public class Signup  extends  JFrame implements ActionListener {
 
 
         JLabel lblanswer = new JLabel("Answer");
-        lblanswer .setFont(new Font("Tahona",Font.BOLD,14));
+        lblanswer .setFont(new Font("Tahoma",Font.BOLD,14));
         lblanswer .setBounds(50,180,125,25);
         p1.add( lblanswer);
 
@@ -89,18 +89,18 @@ public class Signup  extends  JFrame implements ActionListener {
 
 
        create = new JButton("Create");
-       create.setBackground(Color.WHITE);
-       create.setForeground(Color.BLACK);
-       create.setFont(new Font("Tahona",Font.BOLD,14));
+       create.setBackground(Color.BLACK);
+       create.setForeground(Color.WHITE);
        create.setBounds(80,250,100,30);
+       create.setFont(new Font("Tahoma",Font.BOLD,14));
        create.addActionListener(this);
        p1.add(create);
 
 
         back = new JButton("Back");
-        back.setBackground(Color.WHITE);
-        back.setForeground (new Color(133,193,233));
-        back.setFont(new Font("Tahona",Font.BOLD,14));
+        back.setBackground(Color.BLACK);
+        back.setForeground(Color.WHITE);
+        back.setFont(new Font("Tahoma",Font.BOLD,14));
         back.setBounds(250,250,100,30);
         back.addActionListener(this);
         p1.add(back);

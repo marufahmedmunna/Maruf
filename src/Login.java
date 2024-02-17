@@ -2,8 +2,11 @@
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Login extends JFrame {
+public class Login extends JFrame implements ActionListener  {
+    JButton login,signup,password;
     Login(){
         setSize(900,400);
         setLocation(350,200);
@@ -57,27 +60,30 @@ public class Login extends JFrame {
         p2.add(tfpassword);
 
 
-        JButton login = new JButton("Login");
+        login = new JButton("Login");
         login.setBounds(60,200,130,30);
-        login.setBackground(new Color(133,193,233));
+        login.setBackground( Color.BLACK);
         login.setForeground(Color.WHITE);
         login.setBorder(new LineBorder(new Color(133,193,233 )));
+        login.addActionListener(this);
         p2.add(login);
 
 
-        JButton signup = new JButton("Sign up");
+        signup = new JButton("Sign up");
         signup.setBounds(230,200,130,30);
-        signup.setBackground(new Color(133,193,233));
+        signup.setBackground(Color.BLACK);
         signup.setForeground(Color.WHITE);
         signup.setBorder(new LineBorder(new Color(133,193,233 )));
+        signup.addActionListener(this);
         p2.add(signup);
 
 
-        JButton password = new JButton("Forget Password");
+        password = new JButton("Forget Password");
         password.setBounds(130,250,130,30);
-        password.setBackground(new Color(133,193,233));
+        password.setBackground(Color.BLACK);
         password.setForeground(Color.WHITE);
         password.setBorder(new LineBorder(new Color(133,193,233 )));
+        password.addActionListener(this);
         p2.add(password);
 
 
@@ -89,7 +95,23 @@ public class Login extends JFrame {
         setVisible(true);
 
     }
+    public void actionPerformed(ActionEvent ae) {
+        if (ae.getSource() == login) {
+
+
+        } else if (ae.getSource() == signup) {
+            setVisible(false);
+            new Signup();
+
+        }else{
+            setVisible(false);
+            new ForgetPassword();
+        }
+
+    }
     public static void main(String[]args){
         new Login();
     }
+
+
 }
