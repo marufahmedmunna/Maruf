@@ -33,12 +33,13 @@ public class Loading  extends JFrame implements Runnable {
         this.username = username;
         t = new Thread(this);
         setBounds(500,200,650,400);
-        getContentPane().setBackground(Color.PINK);
+        getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
         JLabel text = new JLabel("Travel and Tourism Application");
         text.setBounds(50,20,600,40);
-        text.setFont(new Font("Raleway",Font.BOLD,32));
+        text.setForeground(Color.BLUE);
+        text.setFont(new Font("Raleway",Font.BOLD,35));
         add(text);
 
         bar = new JProgressBar();
@@ -48,13 +49,15 @@ public class Loading  extends JFrame implements Runnable {
 
         JLabel Loading  = new JLabel("Loading,please wait...");
         Loading.setBounds(230,130,150,30);
-        Loading.setFont(new Font("Raleway",Font.BOLD,20));
+        Loading.setForeground(Color.RED);
+        Loading.setFont(new Font("Raleway",Font.BOLD,16));
         add(Loading);
 
-        JLabel iblusername = new JLabel("Welcome" + username);
-        iblusername.setBounds(20,310,400,40);
-        iblusername.setFont(new Font("Raleway",Font.BOLD,25));
-        add(iblusername);
+        JLabel lblusername = new JLabel("Welcome " + username);
+        lblusername.setBounds(20,310,400,40);
+        lblusername.setForeground(Color.RED);
+        lblusername.setFont(new Font("Raleway",Font.BOLD,16));
+        add(lblusername);
 
 
         t.start();
