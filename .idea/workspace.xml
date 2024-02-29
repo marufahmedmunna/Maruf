@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781797c5-1cbf-4607-bbf4-569a9071dc2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ForgetPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/forgotpassword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Loading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/forgotpassword.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/signup.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/signup.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/splash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/splash.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +40,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AddCustomer.executor": "Run",
     "Application.ForgetPassword.executor": "Run",
     "Application.ForgotPassword.executor": "Run",
+    "Application.Loading.executor": "Run",
+    "Application.Loding.executor": "Run",
     "Application.Login.executor": "Run",
     "Application.Signup.executor": "Run",
     "Application.Splash.executor": "Run",
@@ -54,7 +54,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Maruf Ahmmed/Downloads/mysql-connector-java-8.0.28.jar",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }

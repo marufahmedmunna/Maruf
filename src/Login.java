@@ -1,12 +1,13 @@
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import  javax.swing.border.*;
+import java.awt.event.*;
+import java.sql.*;
 
 public class Login extends JFrame implements ActionListener  {
     JButton login,signup,password;
+    JTextField tfpassword,tfusername;
     Login(){
         setSize(900,400);
         setLocation(350,200);
@@ -42,7 +43,7 @@ public class Login extends JFrame implements ActionListener  {
         p2.add(lblusername);
 
 
-        JTextField tfusername = new JTextField();
+         tfusername = new JTextField();
         tfusername.setBounds(60,60,300,30);
         tfusername.setBorder(BorderFactory.createEmptyBorder());
         p2.add(tfusername);
@@ -54,7 +55,7 @@ public class Login extends JFrame implements ActionListener  {
         p2.add(lblPassword);
 
 
-        JTextField tfpassword = new JTextField();
+        tfpassword = new JTextField();
         tfpassword.setBounds(60,150,300,30);
         tfpassword.setBorder(BorderFactory.createEmptyBorder());
         p2.add(tfpassword);
@@ -97,9 +98,27 @@ public class Login extends JFrame implements ActionListener  {
     }
     public void actionPerformed(ActionEvent ae) {
         if (ae.getSource() == login) {
+            try{
+                String username = tfusername.getText();
+                String pass = tfpassword.getText();
+
+                String query = " Select * from account where username = '"+username+"' AND  password ='"+password+"'";
+                Conn c = new Conn();
+                ResultSet rs = c.s.executeQuery(query);
+                if(rs.next()){
+                    setVisible(false);
+                    new Loading(username);
+                }
+                else{
+                    JOptionPane.showMessageDialog(null,"Incorrect username or password");
+                }
+
+            } catch(Exception e) {
+                e.printStackTrace();
+            }
 
 
-        } else if (ae.getSource() == signup) {
+        }else if (ae.getSource() == signup) {
             setVisible(false);
             new Signup();
 
