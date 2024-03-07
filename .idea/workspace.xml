@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781797c5-1cbf-4607-bbf4-569a9071dc2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AddCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loading.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +42,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.AddCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dashboard.executor&quot;: &quot;Run&quot;,
     &quot;Application.ForgetPassword.executor&quot;: &quot;Run&quot;,
     &quot;Application.ForgotPassword.executor&quot;: &quot;Run&quot;,
     &quot;Application.Loading.executor&quot;: &quot;Run&quot;,
