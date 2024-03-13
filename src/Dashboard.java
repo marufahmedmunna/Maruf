@@ -1,11 +1,11 @@
-import javax.swing.*;
+/*import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public  class Dashboard  extends JFrame implements ActionListener {
     String username;
-    JButton addpersonalDetails;
+    JButton addpersonalDetails , viewpersonalDetails;
     Dashboard(String username){
         this.username=username;
 
@@ -56,12 +56,13 @@ public  class Dashboard  extends JFrame implements ActionListener {
         p2.add(updatepersonalDetails);
 
 
-        JButton viewpersonalDetails = new JButton("View Details");
+        viewpersonalDetails = new JButton("View Details");
         viewpersonalDetails.setBounds(0,100,300,50);
         viewpersonalDetails.setBackground(new Color(0,0,102));
         viewpersonalDetails.setForeground(Color.WHITE);
         viewpersonalDetails.setFont(new Font("Tahoma",Font.PLAIN,20));
         viewpersonalDetails.setMargin(new Insets(0,0,0,130));
+        viewpersonalDetails.addActionListener(this);
         p2.add(viewpersonalDetails);
 
 
@@ -186,6 +187,9 @@ public  class Dashboard  extends JFrame implements ActionListener {
         if(ae.getSource()==addpersonalDetails){
             new AddCustomer(username);
         }
+        else if (ae.getSource() == viewpersonalDetails){
+           new Viewcustomer(username);
+        }
     }
     public  static  void main(String[] args)
     {
@@ -193,4 +197,4 @@ public  class Dashboard  extends JFrame implements ActionListener {
     }
 
 
-}
+}*/
