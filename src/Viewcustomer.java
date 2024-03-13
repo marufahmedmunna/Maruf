@@ -1,6 +1,6 @@
 
 
-/*
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -12,7 +12,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
     JButton back;
     Viewcustomer(String username) {
         setBounds(450, 180, 870, 625);
-        getContentPane().setBackground(Color.PINK);
+        getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
         JLabel lblusername = new JLabel("username");
@@ -44,9 +44,13 @@ public class Viewcustomer extends JFrame implements ActionListener {
         lblname.setBounds(30,230,150,25);
         add(lblname);
 
+
         JLabel labelname = new JLabel();
-        labelname.setBounds(220,110,150,25);
+        labelname.setBounds(220,230,150,25);
         add(labelname);
+
+
+
 
         JLabel lblgender = new JLabel("Gender");
         lblgender.setBounds(30,290,150,25);
@@ -61,7 +65,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
         add(lblcountry);
 
         JLabel labelcountry = new JLabel();
-        labelcountry .setBounds(500,50,150,25);
+        labelcountry .setBounds(690,50,150,25);
         add(labelcountry);
 
         JLabel lbladdress = new JLabel("Address");
@@ -78,7 +82,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
         add(lblphone);
 
         JLabel labelphone = new JLabel();
-        labelphone  .setBounds(690,170,150,25);
+        labelphone.setBounds(690,170,150,25);
         add(labelphone);
 
         JLabel lblemail = new JLabel("Email");
@@ -90,11 +94,18 @@ public class Viewcustomer extends JFrame implements ActionListener {
         add(labelemail);
 
         back= new JButton("Back");
-        back.setBackground(Color.white);
-        back.setForeground(Color.black);
+        back.setBackground(Color.BLACK);
+        back.setForeground(Color.white);
         back.setBounds(350,350,100,25);
         back.addActionListener(this);
         add(back);
+
+        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/viewall.jpg"));
+        Image i5 = i4.getImage().getScaledInstance(600,200,Image.SCALE_DEFAULT);
+        ImageIcon i6 = new ImageIcon(i5);
+        JLabel image2 = new JLabel(i6);
+        image2.setBounds(600,400,600,200);
+        add(image2);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/viewall.jpg"));
         Image i2 = i1.getImage().getScaledInstance(600,200,Image.SCALE_DEFAULT);
@@ -103,46 +114,41 @@ public class Viewcustomer extends JFrame implements ActionListener {
         image.setBounds(20,400,600,200);
         add(image);
 
-        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/viewall.jpg"));
-        Image i5 = i4.getImage().getScaledInstance(600,200,Image.SCALE_DEFAULT);
-        ImageIcon i6 = new ImageIcon(i5);
-        JLabel image2 = new JLabel(i6);
-        image.setBounds(600,400,600,200);
-        add(image2);
+
 
         try{
             Conn conn = new Conn();
             String query= "Select * from customer where username ='"+username+"'";
-            ResultSet rs = conn.s.executeQuery("query");
+            ResultSet rs = conn.s.executeQuery(query);
             while (rs.next()){
-                labelusername.setText(rs.getString("Username"));
-                labelid.setText(rs.getString("Id"));
-                labelnumber.setText(rs.getString("Number"));
-                labelname.setText(rs.getString("Name"));
-                labelgender.setText(rs.getString("Gender"));
-                labelcountry.setText(rs.getString("Country"));
-                labeladdress.setText(rs.getString("Address"));
-                labelphone.setText(rs.getString("Phone"));
-                labelemail.setText(rs.getString("Email"));
+                labelusername.setText(rs.getString("username"));
+                labelid.setText(rs.getString("id"));
+                labelnumber.setText(rs.getString("number"));
+                labelname.setText(rs.getString("nume"));
+                labelgender.setText(rs.getString("gender"));
+                labelcountry.setText(rs.getString("country"));
+                labeladdress.setText(rs.getString("address"));
+                labelphone.setText(rs.getString("phone"));
+                labelemail.setText(rs.getString("email"));
 
 
 
             }
-        }
-        catch (Exception e){
+        } catch (Exception e){
+            e.printStackTrace();
+
 
         }
 
 
         setVisible(true);
     }
-    public  void actionperformed (ActionEvent ae){
+    public void actionPerformed(ActionEvent ae){
         setVisible(false);
 
     }
     public static void main(String[] args) {
-        new Viewcustomer("Maruf Ahmmed Munna");
+        new Viewcustomer("Fouzia");
     }
 }
 
-*/

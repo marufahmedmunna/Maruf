@@ -1,6 +1,6 @@
 
 
-/*
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -70,6 +70,6 @@ public class Loading  extends JFrame implements Runnable {
         new Loading("");
     }
 }
-*/
+
 
 
