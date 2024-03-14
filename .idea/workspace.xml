@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781797c5-1cbf-4607-bbf4-569a9071dc2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Updatecustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AddCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checkpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkpackage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Viewcustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewcustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -148,7 +148,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
 
     }
     public static void main(String[] args) {
-        new Viewcustomer("Fouzia");
+        new Viewcustomer("Maruf Ahmmed Munna");
     }
 }
 
