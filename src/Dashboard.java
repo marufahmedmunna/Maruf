@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public  class Dashboard  extends JFrame implements ActionListener {
     String username;
-    JButton addpersonalDetails , viewpersonalDetails;
+    JButton addpersonalDetails , viewpersonalDetails,updatepersonalDetails,cheekpackage;
     Dashboard(String username){
         this.username=username;
 
@@ -47,7 +47,7 @@ public  class Dashboard  extends JFrame implements ActionListener {
         p2.add(addpersonalDetails);
 
 
-        JButton updatepersonalDetails = new JButton("Update personal Details");
+        updatepersonalDetails = new JButton("Update personal Details");
         updatepersonalDetails.setBounds(0,50,300,50);
         updatepersonalDetails.setBackground(new Color(0,0,102));
         updatepersonalDetails.setForeground(Color.WHITE);
@@ -75,12 +75,13 @@ public  class Dashboard  extends JFrame implements ActionListener {
         p2.add(deletepersonalDetails);
 
 
-        JButton cheekpackage = new JButton("Cheek Package");
+        cheekpackage = new JButton("Cheek Package");
         cheekpackage.setBounds(0,200,300,50);
         cheekpackage.setBackground(new Color(0,0,102));
         cheekpackage.setForeground(Color.WHITE);
         cheekpackage.setFont(new Font("Tahoma",Font.PLAIN,20));
         cheekpackage.setMargin(new Insets(0,0,0,110));
+        cheekpackage.addActionListener(this);
         p2.add(cheekpackage);
 
         JButton bookpackage = new JButton("Book Package ");
@@ -189,10 +190,15 @@ public  class Dashboard  extends JFrame implements ActionListener {
         }
         else if (ae.getSource() == viewpersonalDetails){
            new Viewcustomer(username);
+        } else if(ae.getSource() == updatepersonalDetails) {
+            new Updatecustomer(username);
+        } else if(ae.getSource() == cheekpackage){
+            new Checkpackage();
         }
+
     }
-    public  static  void main(String[] args)
-    {
+    public  static  void main(String[] args){
+
         new Dashboard("");
     }
 
