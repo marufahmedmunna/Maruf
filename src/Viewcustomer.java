@@ -100,13 +100,6 @@ public class Viewcustomer extends JFrame implements ActionListener {
         back.addActionListener(this);
         add(back);
 
-        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/viewall.jpg"));
-        Image i5 = i4.getImage().getScaledInstance(600,200,Image.SCALE_DEFAULT);
-        ImageIcon i6 = new ImageIcon(i5);
-        JLabel image2 = new JLabel(i6);
-        image2.setBounds(600,400,600,200);
-        add(image2);
-
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/viewall.jpg"));
         Image i2 = i1.getImage().getScaledInstance(600,200,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -114,6 +107,12 @@ public class Viewcustomer extends JFrame implements ActionListener {
         image.setBounds(20,400,600,200);
         add(image);
 
+        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/viewall.jpg"));
+        Image i5 = i4.getImage().getScaledInstance(600,200,Image.SCALE_DEFAULT);
+        ImageIcon i6 = new ImageIcon(i5);
+        JLabel image2 = new JLabel(i6);
+        image2.setBounds(600,400,600,200);
+        add(image2);
 
 
         try{
@@ -124,7 +123,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
                 labelusername.setText(rs.getString("username"));
                 labelid.setText(rs.getString("id"));
                 labelnumber.setText(rs.getString("number"));
-                labelname.setText(rs.getString("nume"));
+                labelname.setText(rs.getString("name"));
                 labelgender.setText(rs.getString("gender"));
                 labelcountry.setText(rs.getString("country"));
                 labeladdress.setText(rs.getString("address"));

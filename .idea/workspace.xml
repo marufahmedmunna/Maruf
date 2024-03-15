@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781797c5-1cbf-4607-bbf4-569a9071dc2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bookpackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CheckHotels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Destination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UpdateCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/dest2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/dest7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bookpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bookpackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checkpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkpackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Updatecustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viewcustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewcustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest7.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +54,10 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.AddCustomer.executor": "Run",
     "Application.Bookpackage.executor": "Run",
+    "Application.CheckHotels.executor": "Run",
     "Application.Checkpackage.executor": "Run",
     "Application.Dashboard.executor": "Run",
+    "Application.Destination.executor": "Run",
     "Application.ForgetPassword.executor": "Run",
     "Application.ForgotPassword.executor": "Run",
     "Application.Loading.executor": "Run",
@@ -49,7 +65,9 @@
     "Application.Login.executor": "Run",
     "Application.Signup.executor": "Run",
     "Application.Splash.executor": "Run",
+    "Application.UpdateCustomer.executor": "Run",
     "Application.Updatecustomer.executor": "Run",
+    "Application.ViewPackage.executor": "Run",
     "Application.Viewcustomer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",

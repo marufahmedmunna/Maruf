@@ -1,18 +1,17 @@
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
-public class Updatecustomer extends JFrame implements ActionListener {
-    JLabel labelusername, labelname;
-    JComboBox comboid;
+public class UpdateCustomer extends JFrame implements ActionListener {
+    JLabel labelusername, lablename;
+
     JTextField tfnumber,tfcountry,tfaddress,tfemail,tfphone,tfid,tfgender;
-    JRadioButton rmale,rfemal;
+
     JButton add, back;
 
-    Updatecustomer(String username){
+    UpdateCustomer (String username){
         setBounds(500,200,850,550);
         setLayout(null);
         getContentPane().setBackground(Color.WHITE);
@@ -39,8 +38,6 @@ public class Updatecustomer extends JFrame implements ActionListener {
         tfid.setBounds(220, 90, 150, 25);
         add(tfid);
 
-
-
         JLabel lblnumber=new JLabel("Number");
         lblnumber.setBounds(30,130,150,25);
         add(lblnumber);
@@ -53,18 +50,17 @@ public class Updatecustomer extends JFrame implements ActionListener {
         lblname.setBounds(30,170,150,25);
         add(lblname);
 
-        labelname =new JLabel();
-        labelname.setBounds(220,170,150,25);
-        add( labelname);
+        lablename =new JLabel();
+        lablename.setBounds(220,170,150,25);
+        add( lablename);
 
         JLabel lblgender=new JLabel("Gender");
         lblgender.setBounds(30,210,150,25);
         add(lblgender);
 
-
         tfgender = new JTextField();
-        tfgender.setBounds(220, 130, 150, 25);
-        add(tfgender);
+        tfgender .setBounds(220,210,150,25);
+        add(tfgender );
 
 
         JLabel lblcountry=new JLabel("Country");
@@ -115,7 +111,7 @@ public class Updatecustomer extends JFrame implements ActionListener {
         add(back);
 
         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/update.png"));
-        Image i2= i1.getImage().getScaledInstance(400,300,Image.SCALE_DEFAULT);
+        Image i2= i1.getImage().getScaledInstance(200,300,Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel image =new JLabel(i3);
         image.setBounds(400,100,450,300);
@@ -126,7 +122,7 @@ public class Updatecustomer extends JFrame implements ActionListener {
             ResultSet rs= c.s.executeQuery("select * from customer where username='"+username+"'");
             while (rs.next()){
                 labelusername.setText(rs.getString("username"));
-                labelname.setText(rs.getString("nume"));
+                lablename.setText(rs.getString("name"));
                 tfid.setText(rs.getString("id"));
                 tfnumber.setText(rs.getString("number"));
                 tfgender.setText(rs.getString("gender"));
@@ -134,6 +130,7 @@ public class Updatecustomer extends JFrame implements ActionListener {
                 tfaddress.setText(rs.getString("address"));
                 tfphone.setText(rs.getString("phone"));
                 tfemail.setText(rs.getString("email"));
+
 
             }
 
@@ -148,7 +145,7 @@ public class Updatecustomer extends JFrame implements ActionListener {
             String username=labelusername.getText();
             String id= tfid.getText();
             String number=tfnumber.getText();
-            String name=labelname.getText();
+            String name=lablename.getText();
             String gender=tfgender.getText();
             String country=tfcountry.getText();
             String address=tfaddress.getText();
@@ -157,7 +154,8 @@ public class Updatecustomer extends JFrame implements ActionListener {
 
             try{
                 Conn c= new Conn();
-                String query="update  customer set username ='"+username+"',id='"+id+"',number='"+number+"', name='"+name+"',gender='"+gender+"',country='"+country+"',address='"+address+"',phone='"+phone+"',email='"+email+"')";
+                String query="update  customer set username ='"+username+"',id='"+id+"',number='"+number+"', name='"+name+"'" +
+                        ",gender='"+gender+"',country='"+country+"',address='"+address+"',phone='"+phone+"',email='"+email+"'";
                 c.s.executeUpdate(query);
 
                 JOptionPane.showMessageDialog(null, "Customer Details updated Successfully");
@@ -174,6 +172,6 @@ public class Updatecustomer extends JFrame implements ActionListener {
 
     public static  void  main (String[] args){
 
-        new Updatecustomer("Maruf Ahmmed Munna");
+        new UpdateCustomer("Maruf Ahmmed Munna");
     }
 }

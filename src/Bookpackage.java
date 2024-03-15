@@ -123,14 +123,14 @@ public class Bookpackage extends JFrame implements ActionListener{
         bookpackage= new JButton("Book Package");
         bookpackage.setBackground(Color.BLACK);
         bookpackage.setForeground(Color.WHITE);
-        bookpackage.setBounds(340,380,120,25);
+        bookpackage.setBounds(200,380,120,25);
         bookpackage.addActionListener(this);
         add(bookpackage);
 
         back= new JButton("Back");
         back.setBackground(Color.BLACK);
         back.setForeground(Color.WHITE);
-        back.setBounds(200,380,120,25);
+        back.setBounds(340,380,120,25);
         back.addActionListener(this);
         add(back);
 
@@ -149,25 +149,28 @@ public class Bookpackage extends JFrame implements ActionListener{
            String Pack = cpackage.getSelectedItem();
            int cost =0;
            if(Pack.equals("Gold Package")){
-               cost += 50;
+               cost += 22000;
 
            }
            else if  (Pack.equals("Silver Package")){
-             cost += 45;
+             cost += 18000;
            }
            else {
-             cost +=35;
+             cost +=14000;
            }
 
           int persons = Integer.parseInt(tfpersons.getText());
            cost *= persons;
-           labelprice.setText("$" + cost);
+           labelprice.setText(cost + " Tk");
 
         } else if (ae.getSource() == bookpackage){
           try{
               Conn c = new Conn();
-              c.s.executeUpdate("insert into bookpackage values('"+labelusername.getText()+"','"+cpackage.getSelectedItem()+"','"+tfpersons.getText()+"','"+labelid.getText()+"','"+labelnumber.getText()+"','"+labelphone.getText()+"','"+labelprice.getText()+"')");
+              c.s.executeUpdate("insert into bookpackage values('"+labelusername.getText()+"'," +
+                      "'"+cpackage.getSelectedItem()+"','"+tfpersons.getText()+"','"+labelid.getText()+"'," +
+                      "'"+labelnumber.getText()+"','"+labelphone.getText()+"','"+labelprice.getText()+"')");
               JOptionPane.showMessageDialog(null,"Package Booked Successfully");
+
               setVisible(false);
           } catch (Exception e){
              e.printStackTrace();
