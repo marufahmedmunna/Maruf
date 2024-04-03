@@ -15,7 +15,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
         getContentPane().setBackground(Color.WHITE);
         setLayout(null);
 
-        JLabel lblusername = new JLabel("username");
+        JLabel lblusername = new JLabel("Username");
         lblusername.setBounds(30,50,150,25);
         add(lblusername);
 
@@ -24,7 +24,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
         add(labelusername);
 
 
-        JLabel lblid = new JLabel("Id");
+        JLabel lblid = new JLabel("ID");
         lblid.setBounds(30,110,150,25);
         add(lblid);
 
@@ -147,7 +147,7 @@ public class Viewcustomer extends JFrame implements ActionListener {
 
     }
     public static void main(String[] args) {
-        new Viewcustomer("Maruf Ahmmed Munna");
+        new Viewcustomer("");
     }
 }
 

@@ -20,7 +20,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         text.setBounds(60,0,300,30);
         add(text);
 
-        JLabel lblusername = new JLabel("username");
+        JLabel lblusername = new JLabel("Username");
         lblusername.setBounds(30,50,150,25);
         add(lblusername);
 
@@ -29,9 +29,9 @@ public class ViewPackage extends JFrame implements ActionListener {
         add(labelusername);
 
 
-        JLabel lblid = new JLabel("Package");
-        lblid.setBounds(30,90,150,25);
-        add(lblid);
+        JLabel lblpackage = new JLabel("Package");
+        lblpackage.setBounds(30,90,150,25);
+        add(lblpackage);
 
         JLabel labelpackage = new JLabel();
         labelpackage .setBounds(220,90,150,25);
@@ -45,7 +45,7 @@ public class ViewPackage extends JFrame implements ActionListener {
         labelpersons.setBounds(220,130,150,25);
         add(labelpersons);
 
-        JLabel lblname = new JLabel("Id");
+        JLabel lblname = new JLabel("ID");
         lblname.setBounds(30,170,150,25);
         add(lblname);
 
@@ -124,7 +124,7 @@ public class ViewPackage extends JFrame implements ActionListener {
 
     }
     public static void main(String[] args) {
-        new ViewPackage("Maruf Ahmmed Munna");
+        new ViewPackage("");
     }
 }
 

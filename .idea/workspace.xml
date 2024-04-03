@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781797c5-1cbf-4607-bbf4-569a9071dc2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CheckHotels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Destination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UpdateCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ViewPackage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/dest2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/dest7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/About.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookHotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DeleteDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewBookHotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bookpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bookpackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CheckHotels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckHotels.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Checkpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkpackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Updatecustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Destination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Destination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Splash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ViewPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewPackage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Viewcustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewcustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/dest7.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,37 +49,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.AddCustomer.executor": "Run",
-    "Application.Bookpackage.executor": "Run",
-    "Application.CheckHotels.executor": "Run",
-    "Application.Checkpackage.executor": "Run",
-    "Application.Dashboard.executor": "Run",
-    "Application.Destination.executor": "Run",
-    "Application.ForgetPassword.executor": "Run",
-    "Application.ForgotPassword.executor": "Run",
-    "Application.Loading.executor": "Run",
-    "Application.Loding.executor": "Run",
-    "Application.Login.executor": "Run",
-    "Application.Signup.executor": "Run",
-    "Application.Splash.executor": "Run",
-    "Application.UpdateCustomer.executor": "Run",
-    "Application.Updatecustomer.executor": "Run",
-    "Application.ViewPackage.executor": "Run",
-    "Application.Viewcustomer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Maruf Ahmmed/Maruf",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.About.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AddCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Bkash.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BookHotel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Bookpackage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CheckHotels.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Checkpackage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Dashboard.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DeleteDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Destination.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ForgetPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ForgotPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Loading.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Loding.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Login.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pay.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Payment.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Signup.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Splash.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UpdateCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Updatecustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ViewBookHotel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ViewPackage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Viewcustomer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Maruf Ahmmed/Maruf&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,10 +109,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Checkpackage.java</url>
           <line>18</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

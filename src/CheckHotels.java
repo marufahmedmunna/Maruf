@@ -20,7 +20,7 @@ public class CheckHotels extends JFrame implements Runnable{
                 label[i].setVisible(false);
 
             }
-            System.exit(0);
+            setVisible(false);
         }catch (Exception e){
             e.printStackTrace();
         }

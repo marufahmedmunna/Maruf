@@ -20,12 +20,14 @@ public class Bookpackage extends JFrame implements ActionListener{
         setLayout(null);
         getContentPane().setBackground(Color.WHITE);
 
+
+
         JLabel text = new JLabel("BOOK PACKAGE");
         text.setBounds(100,10,200,30);
         text.setFont(new Font("Tahoma",Font.BOLD,20));
         add(text);
 
-        JLabel lblusername = new JLabel("username");
+        JLabel lblusername = new JLabel("Username");
         lblusername.setFont(new Font("Tahoma",Font.PLAIN,16));
         lblusername.setBounds(40,70,100,20);
         add(lblusername);
@@ -57,7 +59,7 @@ public class Bookpackage extends JFrame implements ActionListener{
         tfpersons.setBounds(250,150,200,25);
         add(tfpersons);
 
-        JLabel lblid = new JLabel("id");
+        JLabel lblid = new JLabel("ID");
         lblid.setFont(new Font("Tahoma",Font.PLAIN,16));
         lblid.setBounds(40,190,150,20);
         add(lblid);
@@ -68,7 +70,7 @@ public class Bookpackage extends JFrame implements ActionListener{
         add(labelid);
 
 
-        JLabel lblnumber = new JLabel("number");
+        JLabel lblnumber = new JLabel("Number");
         lblnumber.setFont(new Font("Tahoma",Font.PLAIN,16));
         lblnumber.setBounds(40,230,150,25);
         add(lblnumber);
@@ -77,7 +79,7 @@ public class Bookpackage extends JFrame implements ActionListener{
         labelnumber.setBounds(250,230,150,25);
         add( labelnumber);
 
-        JLabel lblphone = new JLabel("phone");
+        JLabel lblphone = new JLabel("Phone");
         lblphone .setFont(new Font("Tahoma",Font.PLAIN,16));
         lblphone .setBounds(40,270,150,20);
         add(lblphone);
@@ -95,6 +97,7 @@ public class Bookpackage extends JFrame implements ActionListener{
 
         labelprice = new JLabel();
         labelprice.setBounds(250,310,150,25);
+        labelprice.setForeground(Color.RED);
         add(labelprice);
 
         try{
@@ -113,7 +116,7 @@ public class Bookpackage extends JFrame implements ActionListener{
 
         }
 
-        checkprice= new JButton("check price");
+        checkprice= new JButton("Check Price");
         checkprice.setBackground(Color.BLACK);
         checkprice.setForeground(Color.WHITE);
         checkprice.setBounds(60,380,120,25);
@@ -144,45 +147,49 @@ public class Bookpackage extends JFrame implements ActionListener{
         setVisible(true);
 
     }
-    public void actionPerformed (ActionEvent ae) {
-        if(ae.getSource() == checkprice){
-           String Pack = cpackage.getSelectedItem();
-           int cost =0;
-           if(Pack.equals("Gold Package")){
-               cost += 22000;
+    public void actionPerformed(ActionEvent ae) {
+        if (ae.getSource() == checkprice) {
 
-           }
-           else if  (Pack.equals("Silver Package")){
-             cost += 18000;
-           }
-           else {
-             cost +=14000;
-           }
-
-          int persons = Integer.parseInt(tfpersons.getText());
-           cost *= persons;
-           labelprice.setText(cost + " Tk");
-
-        } else if (ae.getSource() == bookpackage){
-          try{
-              Conn c = new Conn();
-              c.s.executeUpdate("insert into bookpackage values('"+labelusername.getText()+"'," +
-                      "'"+cpackage.getSelectedItem()+"','"+tfpersons.getText()+"','"+labelid.getText()+"'," +
-                      "'"+labelnumber.getText()+"','"+labelphone.getText()+"','"+labelprice.getText()+"')");
-              JOptionPane.showMessageDialog(null,"Package Booked Successfully");
-
-              setVisible(false);
-          } catch (Exception e){
-             e.printStackTrace();
-          }
+            String Pack = cpackage.getSelectedItem();
+            int cost = 0;
+            if (Pack.equals("Gold Package")) {
+                cost += 22000;
+            } else if (Pack.equals("Silver Package")) {
+                cost += 18000;
+            } else {
+                cost += 14000;
             }
-        else {
+
+            int persons = Integer.parseInt(tfpersons.getText());
+            cost *= persons;
+            labelprice.setText(cost + " Tk");
+
+        } else if (ae.getSource() == bookpackage) {
+            try {
+
+                String username = labelusername.getText();
+                String id = labelid.getText();
+                String number = labelnumber.getText();
+                String phone = labelphone.getText();
+
+
+                Conn c = new Conn();
+                c.s.executeUpdate("INSERT INTO bookpackage (username, package, persons, id, number, phone, price) VALUES ('" +
+                        username + "','" + cpackage.getSelectedItem() + "','" + tfpersons.getText() + "','" + id + "','" +
+                        number + "','" + phone + "','" + labelprice.getText() + "')");
+
+                JOptionPane.showMessageDialog(null, "Package Booked Successfully");
+                setVisible(false);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
             setVisible(false);
         }
-
     }
+
     public static  void main (String[]args) {
-        new Bookpackage("Maruf Ahmmed Munna");
+        new Bookpackage("");
 
     }
 }

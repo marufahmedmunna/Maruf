@@ -172,6 +172,6 @@ public class UpdateCustomer extends JFrame implements ActionListener {
 
     public static  void  main (String[] args){
 
-        new UpdateCustomer("Maruf Ahmmed Munna");
+        new UpdateCustomer("");
     }
 }
