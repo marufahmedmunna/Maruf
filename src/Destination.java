@@ -1,69 +1,153 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Destination extends JFrame implements Runnable{
-    Thread t1;
-
-    JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10;
-    JLabel [] label=new JLabel[]{l1,l2,l3,l4,l5,l6,l7,l8,l9,l10};
-    JLabel caption;
-
-    public void run(){
-        String [] text=new String[]{"Best Western Heritage" ,"Six Seasons Hotel", "Radisson Blu Dhaka Water Garden "," Dhaka Regency Hotel & Resort",
-                "Renaissance Dhaka Gulshan Hotel", "Sea Pearl Beach Resort"," Spa Cox's Bazar","Amari Dhaka Bangladesh","The Westin Dhaka","Blue See"};
-
-        try{
-            for(int i=0;i<=9;i++){
-                label[i].setVisible(true);
-                Thread.sleep(2500);
-                label[i].setVisible(false);
-
-            }
-            setVisible(false);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    Destination(){
-        setBounds(500,200,800,600);
-        caption=new JLabel();
-        caption.setBounds(50,500,1000,70);
-        caption.setFont(new Font("Tahoma",Font.PLAIN,40));
-        caption.setForeground(Color.WHITE);
-        add(caption);
+public class Destination extends JFrame implements ActionListener {
+    private JButton btnDhaka, btnRajshahi, btnSylhet, btnChittagong, btnKhulna, btnBarishal, btnRangpur, btnMymensingh;
+    private JButton clearButton, backButton;
+    private JLabel label;
+    private JPanel buttonPanel, bottomPanel;
 
 
+    private String[] dhakaImages = {"icons/dhaka.jpg", "icons/dhaka2.jpg", "icons/dhaka3.jpg"};
+    private String[] rajshahiImages = {"icons/raj.jpg", "icons/raj2.jpg", "icons/raj3.jpg"};
+    private String[] sylhetImages = {"icons/s.jpg", "icons/s2.jpg", "icons/s3.jpg"};
+    private String[] chittagongImages = {"icons/c.jpg", "icons/c2.jpg", "icons/c3.jpg"};
+    private String[] khulnaImages = {"icons/k.jpg", "icons/k2.jpg", "icons/k3.jpg"};
+    private String[] barishalImages = {"icons/b.jpg", "icons/b2.jpg", "icons/b3.jpg"};
+    private String[] rangpurImages = {"icons/r.jpg","icons/r2.jpg"};
+    private String[] mymensinghImages = { "icons/m.jpg","icons/m2.jpg"};
 
-        ImageIcon i1=null ,i2=null ,i3=null ,i4=null ,i5=null ,i6=null ,i7=null ,i8=null ,i9=null ,i10=null;
-        ImageIcon [] image=new ImageIcon[]{i1,i2,i3,i4,i5,i6,i7,i8,i9,i10};
 
-        Image j1=null ,j2=null ,j3=null ,j4=null ,j5=null ,j6=null ,j7=null ,j8=null ,j9=null ,j10=null;
-        Image [] jimage=new Image[]{j1,j2,j3,j4,j5,j6,j7,j8,j9,j10};
+    public Destination() {
+        setTitle("Destination Viewer");
+        setSize(700, 450);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
-        ImageIcon k1=null ,k2=null ,k3=null ,k4=null ,k5=null ,k6=null ,k7=null ,k8=null ,k9=null ,k10=null;
-        ImageIcon [] kimage=new ImageIcon[]{k1,k2,k3,k4,k5,k6,k7,k8,k9,k10};
+        getContentPane().setBackground(Color.WHITE);
+
+        buttonPanel = new JPanel(new GridLayout(8, 1));
+        buttonPanel.setBackground(Color.BLACK);
 
 
-        for(int i=0;i<=9;i++) {
-            image [i] = new ImageIcon(ClassLoader.getSystemResource("icons/dest"+(i+1)+".jpg"));
-            jimage [i] = image [i].getImage().getScaledInstance(800, 600, Image.SCALE_DEFAULT);
-            kimage [i] = new ImageIcon(jimage [i]);
-            label[i] = new JLabel(kimage [i]);
-            label[i].setBounds(0, 0, 800, 600);
-            add(label[i]);
+        bottomPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        bottomPanel.setBackground(Color.WHITE);
 
-        }
+        btnDhaka = createButton("Dhaka");
+        btnRajshahi = createButton("Rajshahi");
+        btnSylhet = createButton("Sylhet");
+        btnChittagong = createButton("Chittagong");
+        btnKhulna = createButton("Khulna");
+        btnBarishal = createButton("Barishal");
+        btnMymensingh = createButton("Mymensingh");
+        btnRangpur = createButton("Rangpur");
 
-        t1=new Thread(this);
-        t1.start();
+        clearButton = createButton("Clear");
+        clearButton.setBackground(Color.BLACK);
+        clearButton.setForeground(Color.WHITE);
+
+        backButton = createButton("Back");
+        backButton.setBackground(Color.BLACK);
+        backButton.setForeground(Color.WHITE);
+
+        buttonPanel.add(btnDhaka);
+        buttonPanel.add(btnRajshahi);
+        buttonPanel.add(btnSylhet);
+        buttonPanel.add(btnChittagong);
+        buttonPanel.add(btnKhulna);
+        buttonPanel.add(btnBarishal);
+        buttonPanel.add(btnMymensingh);
+        buttonPanel.add(btnRangpur);
+
+        bottomPanel.add(Box.createHorizontalStrut(20));
+        bottomPanel.add(clearButton);
+        bottomPanel.add(Box.createHorizontalStrut(250));
+        bottomPanel.add(backButton);
+
+        label = new JLabel();
+        label.setHorizontalAlignment(SwingConstants.CENTER);
+        label.setVerticalAlignment(SwingConstants.CENTER);
+        label.setFont(new Font("Arial", Font.PLAIN, 18));
+        add(buttonPanel, BorderLayout.WEST);
+        add(label, BorderLayout.CENTER);
+        add(bottomPanel, BorderLayout.SOUTH);
+
+
+        btnMymensingh.addActionListener(this);
+        btnRangpur.addActionListener(this);
 
         setVisible(true);
     }
 
-
-    public static void main(String[]args) {
-        new Destination();
+    private JButton createButton(String text) {
+        JButton button = new JButton(text);
+        button.addActionListener(this);
+        button.setForeground(Color.BLACK);
+        button.setFont(new Font("Arial", Font.PLAIN, 17));
+        button.setPreferredSize(new Dimension(150, 35));
+        return button;
     }
 
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == btnDhaka) {
+            displayImages(dhakaImages);
+        } else if (e.getSource() == btnRajshahi) {
+            displayImages(rajshahiImages);
+        } else if (e.getSource() == btnSylhet) {
+            displayImages(sylhetImages);
+        } else if (e.getSource() == btnChittagong) {
+            displayImages(chittagongImages);
+        } else if (e.getSource() == btnKhulna) {
+            displayImages(khulnaImages);
+        } else if (e.getSource() == btnBarishal) {
+            displayImages(barishalImages);
+        } else if (e.getSource() == btnMymensingh) {
+            displayImages(mymensinghImages);
+        } else if (e.getSource() == btnRangpur) {
+            displayImages(rangpurImages);
+        } else if (e.getSource() == clearButton) {
+            clearImages();
+        } else if (e.getSource() == backButton) {
+            dispose();
+        }
+    }
+
+    private void clearImages() {
+        label.setIcon(null);
+        if (timer != null) {
+            timer.stop();
+        }
+    }
+
+
+    private Timer timer;
+    private int imageIndex;
+
+    private void displayImages(String[] images) {
+        imageIndex = 0;
+        timer = new Timer(2000, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (imageIndex < images.length) {
+                    loadImage(images[imageIndex]);
+                    imageIndex++;
+                } else {
+                    timer.stop();
+                }
+            }
+        });
+        timer.start();
+    }
+
+    private void loadImage(String imageName) {
+        ImageIcon icon = new ImageIcon(getClass().getResource(imageName));
+        Image image = icon.getImage().getScaledInstance(500, 400, Image.SCALE_SMOOTH);
+        label.setIcon(new ImageIcon(image));
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Destination::new);
+    }
 }

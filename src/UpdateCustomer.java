@@ -110,8 +110,8 @@ public class UpdateCustomer extends JFrame implements ActionListener {
         back.addActionListener(this);
         add(back);
 
-        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/update.png"));
-        Image i2= i1.getImage().getScaledInstance(200,300,Image.SCALE_DEFAULT);
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/update.jpg"));
+        Image i2= i1.getImage().getScaledInstance(300,350,Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel image =new JLabel(i3);
         image.setBounds(400,100,450,300);

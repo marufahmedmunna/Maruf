@@ -138,7 +138,7 @@ public class Bookpackage extends JFrame implements ActionListener{
         add(back);
 
         ImageIcon i1= new ImageIcon(ClassLoader.getSystemResource("icons/bookpackage.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(500,300,Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT);
         ImageIcon i3= new ImageIcon(i2);
         JLabel l12 = new JLabel(i3);
         l12.setBounds(550,50,500,300);

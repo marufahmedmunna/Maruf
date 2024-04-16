@@ -80,7 +80,7 @@ public  class Dashboard  extends JFrame implements ActionListener {
         p2.add(deletepersonalDetails);
 
 
-        cheekpackage = new JButton("Cheek Package");
+        cheekpackage = new JButton("Check Package");
         cheekpackage.setBounds(0,200,300,50);
         cheekpackage.setBackground(new Color(0,0,102));
         cheekpackage.setForeground(Color.WHITE);
@@ -109,8 +109,18 @@ public  class Dashboard  extends JFrame implements ActionListener {
         p2.add(viewpackage);
 
 
+        destination = new JButton("Destination");
+        destination.setBounds(0,350,300,50);
+        destination.setBackground(new Color(0,0,102));
+        destination.setForeground(Color.WHITE);
+        destination.setFont(new Font("Tahoma",Font.PLAIN,20));
+        destination.setMargin(new Insets(0,0,0,147));
+        destination.addActionListener(this);
+        p2.add(destination);
+
+
         viewhotels = new JButton("View Hotels ");
-        viewhotels.setBounds(0,350,300,50);
+        viewhotels.setBounds(0,400,300,50);
         viewhotels.setBackground(new Color(0,0,102));
         viewhotels.setForeground(Color.WHITE);
         viewhotels.setFont(new Font("Tahoma",Font.PLAIN,20));
@@ -120,7 +130,7 @@ public  class Dashboard  extends JFrame implements ActionListener {
 
 
         bookhotel = new JButton("Book Hotel");
-        bookhotel.setBounds(0,400,300,50);
+        bookhotel.setBounds(0,450,300,50);
         bookhotel.setBackground(new Color(0,0,102));
         bookhotel.setForeground(Color.WHITE);
         bookhotel.setFont(new Font("Tahoma",Font.PLAIN,20));
@@ -129,49 +139,42 @@ public  class Dashboard  extends JFrame implements ActionListener {
         p2.add(bookhotel );
 
         viewbookedhotel = new JButton("View Booked Hotel");
-        viewbookedhotel.setBounds(0,450,300,50);
+        viewbookedhotel.setBounds(0,500,300,50);
         viewbookedhotel.setBackground(new Color(0,0,102));
         viewbookedhotel.setForeground(Color.WHITE);
         viewbookedhotel.setFont(new Font("Tahoma",Font.PLAIN,20));
-        viewbookedhotel.setMargin(new Insets(0,0,0,79));
+        viewbookedhotel.setMargin(new Insets(0,0,0,77));
         viewbookedhotel.addActionListener(this);
         p2.add(viewbookedhotel);
 
-        destination = new JButton("Destination");
-        destination.setBounds(0,500,300,50);
-        destination.setBackground(new Color(0,0,102));
-        destination.setForeground(Color.WHITE);
-        destination.setFont(new Font("Tahoma",Font.PLAIN,20));
-        destination.setMargin(new Insets(0,0,0,147));
-        destination.addActionListener(this);
-        p2.add(destination);
+
+
+        calculators = new JButton("Calculator");
+        calculators.setBounds(0,550,300,50);
+        calculators.setBackground(new Color(0,0,102));
+        calculators.setForeground(Color.WHITE);
+        calculators.setFont(new Font("Tahoma",Font.PLAIN,20));
+        calculators.setMargin(new Insets(0,0,0,155));
+        calculators.addActionListener(this);
+        p2.add(calculators);
+
+        notepad = new JButton("Notepad");
+        notepad.setBounds(0,600,300,50);
+        notepad.setBackground(new Color(0,0,102));
+        notepad.setForeground(Color.WHITE);
+        notepad.setFont(new Font("Tahoma",Font.PLAIN,20));
+        notepad.setMargin(new Insets(0,0,0,170));
+        notepad.addActionListener(this);
+        p2.add(notepad);
 
         payment = new JButton("Payment");
-        payment.setBounds(0,550,300,50);
+        payment.setBounds(0,650,300,50);
         payment.setBackground(new Color(0,0,102));
         payment.setForeground(Color.WHITE);
         payment.setFont(new Font("Tahoma",Font.PLAIN,20));
         payment.setMargin(new Insets(0,0,0,170));
         payment.addActionListener(this);
         p2.add(payment);
-
-        calculators = new JButton("Calculators");
-        calculators.setBounds(0,600,300,50);
-        calculators.setBackground(new Color(0,0,102));
-        calculators.setForeground(Color.WHITE);
-        calculators.setFont(new Font("Tahoma",Font.PLAIN,20));
-        calculators.setMargin(new Insets(0,0,0,154));
-        calculators.addActionListener(this);
-        p2.add(calculators);
-
-        notepad = new JButton("Notepad");
-        notepad.setBounds(0,650,300,50);
-        notepad.setBackground(new Color(0,0,102));
-        notepad.setForeground(Color.WHITE);
-        notepad.setFont(new Font("Tahoma",Font.PLAIN,20));
-        notepad.setMargin(new Insets(0,0,0,174));
-        notepad.addActionListener(this);
-        p2.add(notepad);
 
         about = new JButton("About");
         about.setBounds(0,700,300,50);
@@ -182,7 +185,7 @@ public  class Dashboard  extends JFrame implements ActionListener {
         about.addActionListener(this);
         p2.add(about);
 
-        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/home.jpg"));
+        ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("icons/home2.jpg"));
         Image i5 = i4.getImage().getScaledInstance(1650,1000,Image.SCALE_DEFAULT);
         ImageIcon i6 = new ImageIcon(i5);
         JLabel image = new JLabel(i6);

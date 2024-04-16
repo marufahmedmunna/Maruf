@@ -1,12 +1,7 @@
-
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
-
-
 
 public class ViewBookHotel extends JFrame implements ActionListener {
     JButton back;
@@ -28,8 +23,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelusername.setBounds(220,50,150,25);
         add(labelusername);
 
-
-        JLabel lblhotel = new JLabel("Hotel Name");
+        JLabel lblhotel = new JLabel("Division");
         lblhotel.setBounds(30,90,150,25);
         add(lblhotel);
 
@@ -37,7 +31,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelhotel .setBounds(220,90,150,25);
         add(labelhotel );
 
-        JLabel lblnumber = new JLabel("Totel Persons");
+        JLabel lblnumber = new JLabel("Hotel Name");
         lblnumber.setBounds(30,130,150,25);
         add(lblnumber);
 
@@ -45,7 +39,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelpersons.setBounds(220,130,150,25);
         add(labelpersons);
 
-        JLabel lbldays = new JLabel("Totel Days");
+        JLabel lbldays = new JLabel("Total Price");
         lbldays.setBounds(30,170,150,25);
         add(lbldays);
 
@@ -53,7 +47,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labeldays.setBounds(220,170,150,25);
         add(labeldays);
 
-        JLabel lblac = new JLabel("AC/Non-AC");
+        JLabel lblac = new JLabel("Total Days");
         lblac.setBounds(30,210,150,25);
         add(lblac);
 
@@ -61,7 +55,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelac.setBounds(220,210,150,25);
         add(labelac);
 
-        JLabel lblfood = new JLabel("Food Included?");
+        JLabel lblfood = new JLabel("AC/Non-AC");
         lblfood.setBounds(30,250,150,25);
         add(lblfood);
 
@@ -69,19 +63,15 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelfood.setBounds(220,250,150,25);
         add(labelfood);
 
-        JLabel lblname = new JLabel("Id");
+        JLabel lblname = new JLabel("Food Included?");
         lblname.setBounds(30,290,150,25);
         add(lblname);
-
 
         JLabel labelid = new JLabel();
         labelid.setBounds(220,290,150,25);
         add(labelid);
 
-
-
-
-        JLabel lblgender = new JLabel("Number");
+        JLabel lblgender = new JLabel("Id");
         lblgender.setBounds(30,330,150,25);
         add(lblgender);
 
@@ -89,7 +79,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelnumber.setBounds(220,330,150,25);
         add( labelnumber);
 
-        JLabel lblcountry = new JLabel("Phone");
+        JLabel lblcountry = new JLabel("Number");
         lblcountry.setBounds(30,370,150,25);
         add(lblcountry);
 
@@ -97,7 +87,7 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelphone.setBounds(220,370,150,25);
         add(labelphone);
 
-        JLabel lblcost = new JLabel("Total Cost");
+        JLabel lblcost = new JLabel("Phone");
         lblcost .setBounds(30,410,150,25);
         add(lblcost);
 
@@ -105,10 +95,18 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         labelprice .setBounds(220,410,150,25);
         add(labelprice);
 
+        JLabel lbldivision = new JLabel("Total Cost");
+        lbldivision.setBounds(30,450,150,25);
+        add(lbldivision);
+
+        JLabel labeldivision = new JLabel();
+        labeldivision.setBounds(220,450,150,25);
+        add(labeldivision);
+
         back= new JButton("Back");
         back.setBackground(Color.BLACK);
         back.setForeground(Color.white);
-        back.setBounds(130,460,100,25);
+        back.setBounds(130,490,100,25);
         back.addActionListener(this);
         add(back);
 
@@ -119,10 +117,9 @@ public class ViewBookHotel extends JFrame implements ActionListener {
         image.setBounds(450,20,500,400);
         add(image);
 
-
         try{
             Conn conn = new Conn();
-            String query= "Select * from bookhotel where username ='"+username+"'";
+            String query= "SELECT * FROM bookhotel WHERE username ='" + username + "'";
             ResultSet rs = conn.s.executeQuery(query);
             while (rs.next()){
                 labelusername.setText(rs.getString("username"));
@@ -135,22 +132,19 @@ public class ViewBookHotel extends JFrame implements ActionListener {
                 labelfood.setText(rs.getString("food"));
                 labelac.setText(rs.getString("ac"));
                 labeldays.setText(rs.getString("days"));
+                labeldivision.setText(rs.getString("division"));
             }
         } catch (Exception e){
             e.printStackTrace();
-
-
         }
-
-
         setVisible(true);
     }
+
     public void actionPerformed(ActionEvent ae){
         setVisible(false);
-
     }
+
     public static void main(String[] args) {
         new ViewBookHotel("");
     }
 }
-

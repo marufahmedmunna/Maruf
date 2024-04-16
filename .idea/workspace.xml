@@ -5,23 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="781797c5-1cbf-4607-bbf4-569a9071dc2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/About.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BookHotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DeleteDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ViewBookHotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Golden Inn Chattogram Limited.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Grand River View Hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Hotel DS Palace.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Hotel Diamond Park.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Hotel Mukta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Hotel Noorjahan Grand.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Radisson Blu Hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Rose View Hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/Royal Raj Hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/The Grand Hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bathroom1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bathroom2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bathroom3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bed1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bed2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/bed3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/card2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/counter1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/counter2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/counter3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/dhaka.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/dhaka2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/dhaka3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/home2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/k.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/k2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/k3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/m.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/m2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/pul2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/pul3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/r.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/r2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/raj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/raj2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/raj3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/s.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/s2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/s3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/update.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookHotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bookpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bookpackage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CheckHotels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CheckHotels.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Checkpackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Checkpackage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Destination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Destination.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Signup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Signup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Splash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ForgetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ForgetPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UpdateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ViewPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewPackage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viewcustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewcustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ViewBookHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ViewBookHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/bookpackage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/bookpackage.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/dest9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/hotel9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/newcustomer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/newcustomer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/paytm.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/update.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +106,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -54,21 +126,29 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.About.executor&quot;: &quot;Run&quot;,
     &quot;Application.AddCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BikashPayment.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BikashPaymentForm.executor&quot;: &quot;Run&quot;,
     &quot;Application.Bkash.executor&quot;: &quot;Run&quot;,
     &quot;Application.BookHotel.executor&quot;: &quot;Run&quot;,
     &quot;Application.Bookpackage.executor&quot;: &quot;Run&quot;,
     &quot;Application.CheckHotels.executor&quot;: &quot;Run&quot;,
     &quot;Application.Checkpackage.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CustomUserAgentExample.executor&quot;: &quot;Run&quot;,
     &quot;Application.Dashboard.executor&quot;: &quot;Run&quot;,
     &quot;Application.DeleteDetails.executor&quot;: &quot;Run&quot;,
     &quot;Application.Destination.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DestinationSlideshow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DestinationViewer.executor&quot;: &quot;Run&quot;,
     &quot;Application.ForgetPassword.executor&quot;: &quot;Run&quot;,
     &quot;Application.ForgotPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ImageSlideShow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ImageSlideshowFrame.executor&quot;: &quot;Run&quot;,
     &quot;Application.Loading.executor&quot;: &quot;Run&quot;,
     &quot;Application.Loding.executor&quot;: &quot;Run&quot;,
     &quot;Application.Login.executor&quot;: &quot;Run&quot;,
     &quot;Application.Pay.executor&quot;: &quot;Run&quot;,
     &quot;Application.Payment.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PaymentForm.executor&quot;: &quot;Run&quot;,
     &quot;Application.Signup.executor&quot;: &quot;Run&quot;,
     &quot;Application.Splash.executor&quot;: &quot;Run&quot;,
     &quot;Application.UpdateCustomer.executor&quot;: &quot;Run&quot;,

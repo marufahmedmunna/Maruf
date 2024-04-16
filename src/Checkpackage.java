@@ -7,9 +7,9 @@ public class Checkpackage  extends JFrame {
     Checkpackage() {
         setBounds(450, 200, 900, 600);
 
-     String[] package1= {"GOLD PACKAGE","5 Days and 6 Nights", "Airport Assistance","Full Day 3 Island Cruise","Daily Buffet","Soft Drinks Free","English Speaking Guide","Full day 3 Island Cruise","winter Special","Book Now","22000 Tk","Package1.jpg"};
+     String[] package1= {"GOLD PACKAGE","5 Days and 6 Nights", "Airport Assistance","Full Day 3 Island Cruise","Daily Buffet","Soft Drinks Free","English Speaking Guide","Horse Riding","winter Special","Book Now","22000 Tk","Package1.jpg"};
      String[] package2= {"SILVER PACKAGE","4 Days and 5 Nights","Toll Free","Entrance Free Ticket","Meet and Greet at Airport","Welcome Drinks on Arrival","Night Safari","Cruise with dinner","Summer Special","Book Now","18000 Tk","Package2.jpg"};
-     String[] package3= {"BRONZE PACKAGE","2 Days and 3 Nights","Return Airfare","Free Clubing,Horse Riding","Soft Drinks Free","Free Lunch and Dinner","BBQ Dinner","River Rafting","Spring Special","Book Now","14000 Tk","Package3.jpg"};
+     String[] package3= {"BRONZE PACKAGE","2 Days and 3 Nights","Return Airfare","Free Clubing","Soft Drinks Free","Free Lunch and Dinner","BBQ Dinner","River Rafting","Spring Special","Book Now","14000 Tk","Package3.jpg"};
 
 
      JTabbedPane tab = new JTabbedPane();
