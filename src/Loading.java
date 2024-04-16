@@ -49,7 +49,7 @@ public class Loading  extends JFrame implements Runnable {
         add(bar);
 
         JLabel Loading  = new JLabel("Loading,please wait...");
-        Loading.setBounds(230,130,150,30);
+        Loading.setBounds(230,130,300,30);
         Loading.setForeground(Color.RED);
         Loading.setFont(new Font("Raleway",Font.BOLD,17));
         add(Loading);
